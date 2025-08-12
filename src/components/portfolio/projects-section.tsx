@@ -11,13 +11,13 @@ export function ProjectsSection() {
       category: "Machine Learning",
       description: "Modelo preditivo para otimização de preços usando algoritmos de ML avançados.",
       context: "Empresa precisava de precificação dinâmica para aumentar competitividade no mercado",
-      solution: "Implementação de ensemble de modelos (Random Forest + XGBoost) com Python e MLflow",
+      solution: "Implementação de modelos de machine learning para trazer o preço ótimo (Random Forest + Regressão Linear) com Python e MLflow (acompanhamento)",
       impact: [
-        { icon: TrendingUp, label: "Aumento de margem", value: "23%" },
+        { icon: TrendingUp, label: "Aumento de margem", value: "5%" },
         { icon: DollarSign, label: "ROI anual", value: "450%" },
-        { icon: Clock, label: "Redução de tempo", value: "80%" }
+        { icon: Clock, label: "Redução de tempo operacional", value: "40%" }
       ],
-      technologies: ["Python", "Scikit-learn", "MLflow", "Azure ML", "Power BI"],
+      technologies: ["Python", "Scikit-learn", "MLflow",  "Power BI"],
       github: "#",
       demo: "#"
     },
@@ -41,13 +41,13 @@ export function ProjectsSection() {
       category: "Business Intelligence",
       description: "Plataforma analítica em tempo real para tomada de decisão estratégica.",
       context: "Diretoria precisava de insights consolidados e visualizações interativas",
-      solution: "Dashboard responsivo com Power BI, APIs customizadas e alertas automáticos",
+      solution: "Dashboard responsivo com Power BI, APIs customizadas e alertas automáticos - Botões de direcionamento de e-mails automáticos",
       impact: [
         { icon: Users, label: "Usuários ativos", value: "150+" },
         { icon: Clock, label: "Tempo decisão", value: "-60%" },
         { icon: TrendingUp, label: "Precisão KPIs", value: "98%" }
       ],
-      technologies: ["Power BI", "REST API", "SQL Server", "Azure Functions"],
+      technologies: ["Power BI", "REST API", "SQL Server", "DAX"],
       github: "#",
       demo: "#"
     },
@@ -59,40 +59,26 @@ export function ProjectsSection() {
       solution: "Implementação de RPA com Python e Power Automate para mais de 100 clientes/fornecedores",
       impact: [
         { icon: Clock, label: "Horas economizadas", value: "600/mês" },
-        { icon: TrendingUp, label: "Redução erros", value: "95%" },
+        { icon: TrendingUp, label: "Redução erros", value: "90%" },
         { icon: DollarSign, label: "Economia anual", value: "R$ 800K" }
       ],
       technologies: ["Python","Selenium", "OCR", "Power Automate"],
       github: "#",
       demo: "#"
     },
+
     {
-      title: "Plataforma DevOps Completa",
-      category: "DevOps & Infrastructure",
-      description: "Implementação de CI/CD e infraestrutura como código para desenvolvimento ágil.",
-      context: "Deploy manual causava delays e instabilidade nos releases",
-      solution: "Pipeline automatizado com GitLab CI, Docker, Kubernetes e monitoramento",
-      impact: [
-        { icon: Clock, label: "Deploy time", value: "-85%" },
-        { icon: TrendingUp, label: "Uptime", value: "99.9%" },
-        { icon: Users, label: "Dev productivity", value: "+40%" }
-      ],
-      technologies: ["GitLab CI", "Docker", "Kubernetes", "Terraform", "Prometheus"],
-      github: "#",
-      demo: "#"
-    },
-    {
-      title: "Sistema de Gestão Ágil",
+      title: "Sistema de Gestão Ágil com DevOps",
       category: "Project Management",
       description: "Customização avançada do Jira para metodologias ágeis e métricas de performance.",
       context: "Equipes precisavam de visibilidade e métricas para otimizar entregas",
-      solution: "Configuração personalizada com automações, dashboards e relatórios avançados",
+      solution: "Configuração personalizada com automações, dashboards e relatórios avançados - Conexões com APIs do Jira",
       impact: [
-        { icon: TrendingUp, label: "Velocity", value: "+35%" },
+        { icon: TrendingUp, label: "Velocidade", value: "+50%" },
         { icon: Clock, label: "Lead time", value: "-45%" },
-        { icon: Users, label: "Team satisfaction", value: "4.8/5" }
+        { icon: Users, label: "Satisfação de Equipe", value: "4.8/5" }
       ],
-      technologies: ["Jira", "Confluence", "Python", "REST API", "Power BI"],
+      technologies: ["Jira",  "Python", "REST API", "Power BI"],
       github: "#",
       demo: "#"
     }
