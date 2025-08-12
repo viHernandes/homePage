@@ -20,8 +20,8 @@ export function SkillsSection() {
       icon: Database,
       title: "Análise de Dados",
       skills: [
-        { name: "R", level: 90 },
         { name: "SQL", level: 95 },
+        { name: "Python", level: 95 },
         { name: "Pandas", level: 90 },
         { name: "NumPy", level: 85 }
       ]
@@ -30,10 +30,10 @@ export function SkillsSection() {
       icon: BarChart3,
       title: "Visualização",
       skills: [
-        { name: "Power BI", level: 95 },
-        { name: "Tableau", level: 80 },
-        { name: "Plotly", level: 85 },
-        { name: "D3.js", level: 75 }
+        { name: "Power BI", level: 100 },
+        { name: "DAX", level: 80 },
+        { name: "Linguagem M", level: 85 },
+        { name: "Tableau", level: 60 }
       ]
     },
     {
@@ -69,12 +69,13 @@ export function SkillsSection() {
   ];
 
   const certifications = [
-    "AWS Certified Solutions Architect",
-    "Microsoft Azure Data Engineer",
-    "Google Cloud Professional ML Engineer",
-    "Certified Scrum Master",
-    "Lean Six Sigma Green Belt",
-    "Power BI Data Analyst Associate"
+    "Microsoft Azure AI Fundamentals",
+    "Desenvolvimento WEB - CoderHouse",
+    "Anhembi Honors",
+    "Pós Graduação - Gestão de Projetos em Inovação e Sustentabilidade - CEFSA",
+    "Data Science - USP",
+    "Engenharia de Produção - UAM",
+    "Eletrônica - ETEC"
   ];
 
   return (
