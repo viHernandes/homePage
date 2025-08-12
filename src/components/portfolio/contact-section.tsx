@@ -20,14 +20,14 @@ export function ContactSection() {
     {
       icon: Mail,
       label: "E-mail",
-      value: "contato@exemplo.com",
-      link: "mailto:contato@exemplo.com"
+      value: "victor.hernandes.s@hotmail.com",
+      link: "mailto:victor.hernandes.s@hotmail.com"
     },
     {
       icon: Phone,
       label: "Telefone",
-      value: "+55 (11) 99999-9999",
-      link: "tel:+5511999999999"
+      value: "+55 (11) 94397-1008",
+      link: "tel:+5511943971008"
     },
     {
       icon: MapPin,
@@ -38,7 +38,7 @@ export function ContactSection() {
     {
       icon: Calendar,
       label: "Disponibilidade",
-      value: "Aberto a novas oportunidades",
+      value: "Entre em contato",
       link: "#"
     }
   ];
@@ -47,19 +47,19 @@ export function ContactSection() {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      url: "https://linkedin.com/in/exemplo",
+      url: "https://www.linkedin.com/in/victorhernandes/",
       color: "hover:text-blue-500"
     },
     {
       icon: Github,
       label: "GitHub",
-      url: "https://github.com/exemplo",
+      url: "https://github.com/viHernandes",
       color: "hover:text-gray-300"
     },
     {
       icon: Mail,
       label: "E-mail",
-      url: "mailto:contato@exemplo.com",
+      url: "mailto:victor.hernandes.s@hotmail.com",
       color: "hover:text-green-500"
     }
   ];
@@ -137,7 +137,9 @@ export function ContactSection() {
             {/* Contact Form */}
             <Card className="border-border/50 bg-card/50 backdrop-blur-sm">
               <CardHeader>
-                <CardTitle className="text-2xl text-primary">
+                <CardTitle className="text-2xl text-primary"
+                onClick = {() => window.open('https://wa.me/55943971008?text=Ol%C3%A1!%20Gostaria%20de%20conversar%20e%20conhecer%20melhor%20suas%20ideias%20sobre%20tecnologia%20e%20inova%C3%A7%C3%B5es', '_blank')}
+                >
                   Envie uma Mensagem
                 </CardTitle>
               </CardHeader>
@@ -147,7 +149,7 @@ export function ContactSection() {
                     <div className="space-y-2">
                       <label className="text-sm font-medium">Nome</label>
                       <Input 
-                        placeholder="Seu nome completo"
+                        placeholder="Victor Hernandes dos Santos"
                         className="border-border/50 focus:border-primary"
                       />
                     </div>
@@ -155,7 +157,7 @@ export function ContactSection() {
                       <label className="text-sm font-medium">E-mail</label>
                       <Input 
                         type="email"
-                        placeholder="seu@email.com"
+                        placeholder="victor.hernandes.s@hotmail.com"
                         className="border-border/50 focus:border-primary"
                       />
                     </div>
@@ -214,6 +216,7 @@ export function ContactSection() {
                     variant="outline"
                     size="lg"
                     className="border-primary/50 hover:border-primary hover:bg-primary/10"
+                    onClick = {() => window.open('https://www.linkedin.com/in/victorhernandes/','_blank')}
                   >
                     <Linkedin className="mr-2 h-5 w-5" />
                     Conectar no LinkedIn
