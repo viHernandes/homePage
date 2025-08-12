@@ -55,14 +55,14 @@ export function ProjectsSection() {
       title: "Automação RPA Corporativa",
       category: "Process Automation",
       description: "Bots inteligentes para automatizar processos repetitivos e reduzir erros.",
-      context: "Processos manuais consumiam 40+ horas semanais da equipe financeira",
-      solution: "Implementação de RPA com Python e UiPath para 15 processos críticos",
+      context: "Processos manuais consumiam 40+ horas semanais da equipe comercial",
+      solution: "Implementação de RPA com Python e Power Automate para mais de 100 clientes/fornecedores",
       impact: [
         { icon: Clock, label: "Horas economizadas", value: "600/mês" },
         { icon: TrendingUp, label: "Redução erros", value: "95%" },
         { icon: DollarSign, label: "Economia anual", value: "R$ 800K" }
       ],
-      technologies: ["Python", "UiPath", "Selenium", "OCR", "Azure"],
+      technologies: ["Python","Selenium", "OCR", "Power Automate"],
       github: "#",
       demo: "#"
     },
