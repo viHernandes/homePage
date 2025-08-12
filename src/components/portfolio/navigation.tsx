@@ -43,7 +43,7 @@ export function Navigation() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-            Portfolio
+            Hernandes Consulting
           </div>
 
           {/* Desktop Navigation */}
