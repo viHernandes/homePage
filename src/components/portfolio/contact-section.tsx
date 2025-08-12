@@ -149,7 +149,7 @@ export function ContactSection() {
                     <div className="space-y-2">
                       <label className="text-sm font-medium">Nome</label>
                       <Input 
-                        placeholder="Victor Hernandes dos Santos"
+                        placeholder="Digite seu nome"
                         className="border-border/50 focus:border-primary"
                       />
                     </div>
@@ -157,7 +157,7 @@ export function ContactSection() {
                       <label className="text-sm font-medium">E-mail</label>
                       <Input 
                         type="email"
-                        placeholder="victor.hernandes.s@hotmail.com"
+                        placeholder="Digite seu e-mail"
                         className="border-border/50 focus:border-primary"
                       />
                     </div>
