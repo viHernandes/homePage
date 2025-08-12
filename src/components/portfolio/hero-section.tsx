@@ -69,8 +69,10 @@ export function HeroSection() {
                 variant="ghost" 
                 size="icon"
                 className="h-12 w-12 rounded-full hover:bg-primary/20 hover:scale-110 transition-all duration-300"
+                onClick={() => window.open('https://www.linkedin.com/in/victorhernandes/', '_blank')}
               >
                 <Linkedin className="h-6 w-6" />
+                
               </Button>
               
               <Button 
