@@ -48,6 +48,7 @@ export function HeroSection() {
             <Button 
               size="lg" 
               className="bg-gradient-primary hover:shadow-glow transition-all duration-300 text-lg px-8 py-6"
+              onClick = {() => window.open('mailto:victor.hernandes.s@hotmail.com','_blank')}
             >
               <Mail className="mr-2 h-5 w-5" />
               Entre em Contato

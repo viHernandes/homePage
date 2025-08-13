@@ -39,7 +39,7 @@ export function ContactSection() {
       icon: Calendar,
       label: "Disponibilidade",
       value: "Entre em contato",
-      link: "#"
+      link: "mailto:victor.hernandes.s@hotmail.com"
     }
   ];
 
@@ -114,6 +114,7 @@ export function ContactSection() {
                         variant="outline"
                         size="icon"
                         className={`border-primary/50 hover:border-primary ${social.color} transition-all duration-300`}
+                        onClick={() => window.open(social.url, "_blank")}
                       >
                         <social.icon className="h-5 w-5" />
                       </Button>
@@ -186,7 +187,9 @@ export function ContactSection() {
                     size="lg"
                   >
                     <Send className="mr-2 h-5 w-5" />
-                    Enviar Mensagem
+                    <a href="mailto:victor.hernandes.s@hotmail.com?subject=Assunto&body=Mensagem">
+  Enviar Mensagem
+</a>
                   </Button>
                 </form>
               </CardContent>
@@ -208,6 +211,7 @@ export function ContactSection() {
                   <Button 
                     size="lg"
                     className="bg-gradient-primary hover:shadow-glow transition-all duration-300"
+                    onClick = {() => window.open('https://calendar.google.com/calendar/render?action=TEMPLATE&text=Reuni%C3%A3o%20Sobre%20Inova%C3%A7%C3%A3o%20Victor&dates=20250815T140000Z/20250815T150000Z&details=Discuss%C3%A3o&add=victor.hernandes.s@hotmail.com')}
                   >
                     <Calendar className="mr-2 h-5 w-5" />
                     Agendar Reunião
