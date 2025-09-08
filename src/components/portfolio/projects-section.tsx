@@ -2,7 +2,13 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Section } from "@/components/ui/section";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Github, ExternalLink, TrendingUp, DollarSign, Clock, Users } from "lucide-react";
+import imgPricing1 from "../../assets/images/pricing1.png";
+import imgPricing2 from "../../assets/images/pricing2.png";
+import videoSimulacao1 from "../../assets/images/sim_3d_csn.mp4";
+import videoSimulacao2 from "../../assets/images/vm_csn.mp4";
+
 
 export function ProjectsSection() {
   const projects = [
@@ -17,11 +23,17 @@ export function ProjectsSection() {
         { icon: DollarSign, label: "ROI anual", value: "450%" },
         { icon: Clock, label: "Redução de tempo operacional", value: "40%" }
       ],
-      technologies: ["Python", "Scikit-learn", "MLflow",  "Power BI"],
+      technologies: ["Python", "Scikit-learn", "MLflow", "Power BI"],
       github: "#",
-      demo: "#"
+      demoImages: [
+       { type: "image", src: imgPricing1 },
+    { type: "image", src: imgPricing2 }
+
+
+      ]
     },
-    {
+
+{
       title: "Pipeline ETL para Big Data",
       category: "Data Engineering",
       description: "Arquitetura completa de dados para processar 10TB+ diários em tempo real.",
@@ -34,7 +46,7 @@ export function ProjectsSection() {
       ],
       technologies: ["Apache Spark", "Kafka", "Azure", "Delta Lake", "Python"],
       github: "#",
-      demo: "#"
+      demoImages: ["#"]
     },
     {
       title: "Dashboard Executivo Inteligente",
@@ -49,7 +61,7 @@ export function ProjectsSection() {
       ],
       technologies: ["Power BI", "REST API", "SQL Server", "DAX"],
       github: "#",
-      demo: "#"
+      demoImages: ["#"]
     },
     {
       title: "Automação RPA Corporativa",
@@ -64,7 +76,27 @@ export function ProjectsSection() {
       ],
       technologies: ["Python","Selenium", "OCR", "Power Automate"],
       github: "#",
-      demo: "#"
+       demoImages: ["#"]
+    },
+    {
+      title: "Estudos de Operações e Hora-Homem de Utilização",
+      category: "Process Automation",
+      description: "Análise de processos repetitivos utilizando dados estatísticos para identificar a forma mais eficiente de execução e otimizar recursos.",
+      context: "Processos repetitivos e dados estatísticos que dizem qual é a melhor forma de atuar em um processo.",
+      solution: "Implementação de uma loja in-company com foco em reduzir atrasos e aumentar a eficiência operacional. O estudo foi realizado utilizando uma ferramenta de simulação 3D combinada com análises estatísticas, considerando dados de chegada, filas e tempos de operação.",
+      impact: [
+        { icon: Clock, label: "Horas economizadas", value: "600/mês" },
+        { icon: TrendingUp, label: "Redução erros", value: "90%" },
+        { icon: DollarSign, label: "Economia anual", value: "R$ 800K" }
+      ],
+      technologies: ["Python","Selenium", "OCR", "Power Automate"],
+      github: "#",
+       demoImages: [
+      { type: "video", src: videoSimulacao1 },
+      { type: "video", src: videoSimulacao2 }
+
+
+       ]
     },
 
     {
@@ -80,8 +112,11 @@ export function ProjectsSection() {
       ],
       technologies: ["Jira",  "Python", "REST API", "Power BI"],
       github: "#",
-      demo: "#"
+     demoImages: ["#"]
     }
+  
+
+
   ];
 
   return (
@@ -101,11 +136,7 @@ export function ProjectsSection() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {projects.map((project, index) => (
-              <Card 
-                key={index}
-                className="border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-card animate-slide-up overflow-hidden"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
+              <Card key={index} className="border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-card animate-slide-up overflow-hidden" style={{ animationDelay: `${index * 100}ms` }}>
                 <CardHeader>
                   <div className="flex items-start justify-between">
                     <div>
@@ -119,9 +150,9 @@ export function ProjectsSection() {
                     </div>
                   </div>
                 </CardHeader>
-                
+
                 <CardContent className="space-y-6">
-                  {/* Context & Solution */}
+                  {/* Contexto e Solução */}
                   <div className="space-y-4">
                     <div>
                       <h5 className="font-semibold text-primary mb-1">Contexto</h5>
@@ -133,7 +164,7 @@ export function ProjectsSection() {
                     </div>
                   </div>
 
-                  {/* Impact Metrics */}
+                  {/* Impacto */}
                   <div className="bg-gradient-secondary p-4 rounded-lg">
                     <h5 className="font-semibold mb-3 text-primary">Impacto Alcançado</h5>
                     <div className="grid grid-cols-3 gap-4">
@@ -149,39 +180,56 @@ export function ProjectsSection() {
                     </div>
                   </div>
 
-                  {/* Technologies */}
+                  {/* Tecnologias */}
                   <div>
                     <h5 className="font-semibold mb-2 text-sm">Tecnologias</h5>
                     <div className="flex flex-wrap gap-2">
                       {project.technologies.map((tech, techIndex) => (
-                        <Badge 
-                          key={techIndex}
-                          variant="secondary" 
-                          className="text-xs"
-                        >
+                        <Badge key={techIndex} variant="secondary" className="text-xs">
                           {tech}
                         </Badge>
                       ))}
                     </div>
                   </div>
 
-                  {/* Action Buttons */}
+                  {/* Botões */}
                   <div className="flex gap-3 pt-2">
-                    <Button 
-                      variant="outline" 
-                      size="sm"
-                      className="flex-1 border-primary/50 hover:border-primary hover:bg-primary/10"
-                    >
-                      <Github className="mr-2 h-4 w-4" />
-                      Código
+                    <Button variant="outline" size="sm" className="flex-1 border-primary/50 hover:border-primary hover:bg-primary/10">
+                      <Github className="mr-2 h-4 w-4" /> Código
                     </Button>
-                    <Button 
-                      size="sm"
-                      className="flex-1 bg-gradient-primary hover:shadow-glow"
-                    >
-                      <ExternalLink className="mr-2 h-4 w-4" />
-                      Demo
-                    </Button>
+
+                    {/* Botão Demo com Modal */}
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <Button size="sm" className="flex-1 bg-gradient-primary hover:shadow-glow">
+                          <ExternalLink className="mr-2 h-4 w-4" /> Demo
+                        </Button>
+                      </DialogTrigger>
+                      <DialogContent className="max-w-3xl">
+                        <DialogHeader>
+                          <DialogTitle>{project.title}</DialogTitle>
+                        </DialogHeader>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                         {project.demoImages.map((item, i) => (
+  item.type === "image" ? (
+    <img
+      key={i}
+      src={item.src}
+      alt={`Demo ${i + 1}`}
+      className="rounded-lg shadow w-full"
+    />
+  ) : (
+    <video
+      key={i}
+      src={item.src}
+      controls
+      className="rounded-lg shadow w-full"
+    />
+  )
+))}
+                        </div>
+                      </DialogContent>
+                    </Dialog>
                   </div>
                 </CardContent>
               </Card>
