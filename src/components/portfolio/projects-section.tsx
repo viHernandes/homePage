@@ -8,6 +8,8 @@ import imgPricing1 from "../../assets/images/pricing1.png";
 import imgPricing2 from "../../assets/images/pricing2.png";
 import videoSimulacao1 from "../../assets/images/sim_3d_csn.mp4";
 import videoSimulacao2 from "../../assets/images/vm_csn.mp4";
+import fornecedoresLogs from "../../assets/images/fornecedorlog.png";
+import sistemaLog from "../../assets/images/sistema_log.mp4";
 
 
 export function ProjectsSection() {
@@ -32,22 +34,27 @@ export function ProjectsSection() {
 
       ]
     },
-
-{
-      title: "Pipeline ETL para Big Data",
-      category: "Data Engineering",
-      description: "Arquitetura completa de dados para processar 10TB+ diários em tempo real.",
-      context: "Volume crescente de dados exigia processamento escalável e confiável",
-      solution: "Pipeline distribuído com Apache Spark, Kafka e Delta Lake no Azure",
+    {
+      title: "Sistema de Gestão de Automações",
+      category: "Process Automation",
+      description: "Ferramenta para monitoramento de jobs críticos que controlam fornecedores, clientes, entregas e processos internos, garantindo visibilidade e proatividade.",
+      context: "O volume crescente de dados exigia um processamento escalável, confiável e capaz de alertar antecipadamente sobre possíveis falhas.",
+      solution: "Ferramenta desenvolvida em Python com Flask que executa jobs diários, analisa o banco de dados e realiza os disparos necessários automaticamente",
       impact: [
-        { icon: Clock, label: "Redução latência", value: "90%" },
-        { icon: TrendingUp, label: "Throughput", value: "500%" },
-        { icon: DollarSign, label: "Economia anual", value: "R$ 2M" }
+        { icon: TrendingUp, label: "Aumento de margem", value: "5%" },
+        { icon: DollarSign, label: "ROI anual", value: "450%" },
+        { icon: Clock, label: "Redução de tempo operacional", value: "40%" }
       ],
-      technologies: ["Apache Spark", "Kafka", "Azure", "Delta Lake", "Python"],
+      technologies: ["Python", "Scikit-learn", "MLflow", "Power BI"],
       github: "#",
-      demoImages: ["#"]
+      demoImages: [
+       { type: "image", src: fornecedoresLogs },
+       {type:'video',src : sistemaLog}
+
+
+      ]
     },
+
     {
       title: "Dashboard Executivo Inteligente",
       category: "Business Intelligence",
@@ -201,11 +208,11 @@ export function ProjectsSection() {
                     {/* Botão Demo com Modal */}
                     <Dialog>
                       <DialogTrigger asChild>
-                        <Button size="sm" className="flex-1 bg-gradient-primary hover:shadow-glow">
+                        <Button size="lg" className="flex-1 bg-gradient-primary hover:shadow-glow">
                           <ExternalLink className="mr-2 h-4 w-4" /> Demo
                         </Button>
                       </DialogTrigger>
-                      <DialogContent className="max-w-3xl">
+                      <DialogContent className="max-w-6xl w-full max-h-[90vh] overflow-y-auto">
                         <DialogHeader>
                           <DialogTitle>{project.title}</DialogTitle>
                         </DialogHeader>
