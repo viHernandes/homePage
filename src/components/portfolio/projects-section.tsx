@@ -10,6 +10,7 @@ import videoSimulacao1 from "../../assets/images/sim_3d_csn.mp4";
 import videoSimulacao2 from "../../assets/images/vm_csn.mp4";
 import fornecedoresLogs from "../../assets/images/fornecedorlog.png";
 import sistemaLog from "../../assets/images/sistema_log.mp4";
+import sistemaCRM from "../../assets/images/CRM_VIDEO_EXEMPLO.mp4";
 
 
 export function ProjectsSection() {
@@ -34,6 +35,31 @@ export function ProjectsSection() {
 
       ]
     },
+
+{
+      title: "CRM Inteligente - Customer Relationship Management",
+      category: "Process Automation & AI",
+      description: "CRM desenvolvido para otimizar a performance de vendas, monitorar clientes e fornecedores, e sugerir ações estratégicas utilizando inteligência artificial.",
+      context: "O crescimento exponencial de dados e a necessidade de uma abordagem proativa com vendedores exigiam uma ferramenta capaz de priorizar ações de vendas, prever oportunidades e recomendar produtos de forma inteligente.",
+      solution: "Sistema completo desenvolvido em Python com Flask, que processa diariamente os dados, utiliza modelos de machine learning para prever onde o vendedor deve atuar e gera prompts automáticos de recomendação de produtos.",
+      impact: [
+       { icon: TrendingUp, label: "Aumento de margem", value: "3%" },
+  { icon: DollarSign, label: "ROI anual", value: "15%" },
+  { icon: Clock, label: "Redução de tempo operacional", value: "20%" },
+  { icon: Clock, label: "Eficiência em vendas", value: "Previsão de ações automatizada" }
+      ],
+      technologies: ["Python", "Flask", "Scikit-learn", "MLflow", "Power BI", "IA Generativa"],
+      github: "#",
+      demoImages: [
+  
+       {type:'video',src : sistemaCRM}
+
+
+      ]
+    },
+
+
+
     {
       title: "Sistema de Gestão de Automações",
       category: "Process Automation",
