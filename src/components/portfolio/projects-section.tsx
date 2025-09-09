@@ -11,6 +11,7 @@ import videoSimulacao2 from "../../assets/images/vm_csn.mp4";
 import fornecedoresLogs from "../../assets/images/fornecedorlog.png";
 import sistemaLog from "../../assets/images/sistema_log.mp4";
 import sistemaCRM from "../../assets/images/CRM_VIDEO_EXEMPLO.mp4";
+import sistemaForecast from "../../assets/images/forecaster.mp4";
 
 
 export function ProjectsSection() {
@@ -19,11 +20,11 @@ export function ProjectsSection() {
       title: "Sistema de Precificação Inteligente",
       category: "Machine Learning",
       description: "Modelo preditivo para otimização de preços usando algoritmos de ML avançados.",
-      context: "Empresa precisava de precificação dinâmica para aumentar competitividade no mercado",
+      context: "Empresa precisava de precificação dinâmica para aumentar competitividade no mercado - Toda precificação era manual.",
       solution: "Implementação de modelos de machine learning para trazer o preço ótimo (Random Forest + Regressão Linear) com Python e MLflow (acompanhamento)",
       impact: [
         { icon: TrendingUp, label: "Aumento de margem", value: "5%" },
-        { icon: DollarSign, label: "ROI anual", value: "450%" },
+        { icon: DollarSign, label: "ROI anual", value:  "200%" },
         { icon: Clock, label: "Redução de tempo operacional", value: "40%" }
       ],
       technologies: ["Python", "Scikit-learn", "MLflow", "Power BI"],
@@ -68,7 +69,7 @@ export function ProjectsSection() {
       solution: "Ferramenta desenvolvida em Python com Flask que executa jobs diários, analisa o banco de dados e realiza os disparos necessários automaticamente",
       impact: [
         { icon: TrendingUp, label: "Aumento de margem", value: "5%" },
-        { icon: DollarSign, label: "ROI anual", value: "450%" },
+        { icon: DollarSign, label: "ROI anual", value: "100%" },
         { icon: Clock, label: "Redução de tempo operacional", value: "40%" }
       ],
       technologies: ["Python", "Scikit-learn", "MLflow", "Power BI"],
@@ -110,6 +111,27 @@ export function ProjectsSection() {
       technologies: ["Python","Selenium", "OCR", "Power Automate"],
       github: "#",
        demoImages: ["#"]
+    },
+    {
+      title: "Inteligência de Monitoramento de Consumo - Forecaster",
+      category: "Customer Insights & Process Automation",
+      description: "Sistema inteligente que detecta padrões de consumo e alerta a equipe comercial para ações proativas.",
+      context: "Clientes apresentavam variações de consumo sem visibilidade antecipada, impactando o faturamento e a retenção.",
+      solution: "Desenvolvimento de um modelo preditivo integrado ao CRM, capaz de identificar picos e quedas de consumo e enviar alertas automáticos aos vendedores.",
+      impact: [
+        { icon: Clock, label: "Alertas proativos", value: "100% dos clientes monitorados - CNPJS" },
+        { icon: TrendingUp, label: "Aumento de retenção", value: "+8%" }
+      ],
+      technologies: ["Python", "Machine Learning", "Flask","Pandas"],
+      github: "#",
+      demoImages: [
+          {
+            type: 'media', src : sistemaForecast
+
+          }
+
+
+      ]
     },
     {
       title: "Estudos de Operações e Hora-Homem de Utilização",
