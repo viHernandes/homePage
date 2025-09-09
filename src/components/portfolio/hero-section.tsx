@@ -40,7 +40,7 @@ export function HeroSection() {
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-       Supervisor de TI especializado em Machine Learning, Analytics e DevOps, 
+       Supervisor de Transformação Digital especializado em Machine Learning, Analytics e DevOps, 
        com experiência no desenvolvimento de soluções completas, incluindo sistemas com SSO e 
        integração de múltiplas plataformas. 
        Transformo dados em insights estratégicos para impulsionar decisões e resultados de negócio.
