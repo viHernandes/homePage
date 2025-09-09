@@ -12,6 +12,8 @@ import fornecedoresLogs from "../../assets/images/fornecedorlog.png";
 import sistemaLog from "../../assets/images/sistema_log.mp4";
 import sistemaCRM from "../../assets/images/CRM_VIDEO_EXEMPLO.mp4";
 import sistemaForecast from "../../assets/images/forecaster.mp4";
+import powerautomate1 from "../../assets/images/powerautomate1.png";
+import powerautomate2 from "../../assets/images/powerautomate2.png";
 
 
 export function ProjectsSection() {
@@ -132,6 +134,24 @@ export function ProjectsSection() {
 
 
       ]
+    },
+    {
+    title: "Automação Inteligente com Power Automate e AI Builder",
+category: "Process Automation & Analytics",
+description: "Fluxos automatizados que utilizam IA para tomada de decisão, conectando sistemas corporativos ao Power BI para análise e monitoramento.",
+context: "A equipe precisava reduzir processos manuais, acelerar decisões e integrar informações dispersas para obter insights em tempo real.",
+solution: "Criação de fluxos no Power Automate com bots inteligentes, uso de prompts no AI Builder para interpretação de dados e tomada de decisão automatizada, e integração direta com Power BI para dashboards dinâmicos.",
+impact: [
+  { icon: Clock, label: "Processos Automatizados", value: "+50 fluxos implementados" },
+  { icon: TrendingUp, label: "IA aplicada", value: "Reconhecimento e classificação de dados via AI Builder" },
+  { icon: DollarSign, label: "Integração BI", value: "Dashboards atualizados em tempo real" }
+],
+technologies: ["Power Automate", "AI Builder", "Power BI", "Microsoft 365", "Conectores Premium"],
+github: "#",
+demoImages: [
+    { type: 'image', src: powerautomate1 },
+    {type: 'image', src : powerautomate2}
+]
     },
     {
       title: "Estudos de Operações e Hora-Homem de Utilização",
